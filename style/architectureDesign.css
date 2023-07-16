@@ -1,63 +1,92 @@
-
-*{
+* {
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "The Nautigal", cursive;
   font-family: "Work Sans", sans-serif;
-
 }
 
 /* header style */
-header{
-    background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
-
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 50px 240px;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav li{
-    list-style: none ;
-    margin-right: 30px;
-    font-weight: 500px;
-    font-size: 1rem;
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500px;
+  font-size: 1rem;
 }
-nav >ul{
-    display: flex;
+nav > ul {
+  display: flex;
 }
-nav li a{
-    text-decoration: none;
-    color: #424242;
+nav li a {
+  text-decoration: none;
+  color: #424242;
 }
-.navTitle{
-    font-size: 2.8rem;
-    font-weight: 700px;
-    color: #131313;
-
+.navTitle {
+  font-size: 2.8rem;
+  font-weight: 700px;
+  color: #131313;
 }
 /* Banner styel  */
-.bannerContent{
-    max-width: 800px;
-    text-align: center;
-    margin: 0px auto;
+.bannerContent {
+  max-width: 800px;
+  text-align: center;
+  margin: 0px auto;
 }
-.bannerTitle{
-    font-size: 4rem;
-    font-weight: 700px;
-    color: #131313;
+.bannerTitle {
+  font-size: 4rem;
+  font-weight: 700px;
+  color: #131313;
 }
-.bannerTitle{
-    color: 727272;
+.bannerTitle {
+  color: 727272;
 }
-.banner{
-    justify-content: center;
-    text-align: center;
+.banner {
+  justify-content: center;
+  text-align: center;
 }
-.bannerImg{
-    max-width: 900px;
+.bannerImg {
+  /* max-width: 900px; */
+  margin-top: 20px;
+  width: 100%;
 }
-.btnPrimary{
-    
+.btnPrimary {
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFF;
+  cursor: pointer;
+  border: 0;
+}
+.bannerDiscription{
+    color: #727272;
+}
+/* responsive media queries */
+
+@media screen and (max-width:576px) {
+
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* Medium devices */
+@media screen and (min-width:576px) and (max-width:916px) {
+    header{
+        padding: 50px;
+        background-color: #b81616;
+    }
+    nav{
+       flex-direction: column;
+    }
 }
