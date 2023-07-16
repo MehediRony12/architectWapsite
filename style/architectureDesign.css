@@ -4,6 +4,9 @@
   font-family: "The Nautigal", cursive;
   font-family: "Work Sans", sans-serif;
 }
+.bannerDiscription{
+  color: #727272;
+}
 
 /* header style */
 header {
@@ -66,18 +69,16 @@ nav li a {
   cursor: pointer;
   border: 0;
 }
-.bannerDiscription{
-    color: #727272;
-}
+
 /* Styles for main section */
 main{
   max-width: 1440px;
-  margin: 0px auto;
+  margin: 70px auto;
 }
 .teamsContainer{
   display: flex;
   align-items: center;
-  margin-top: 85px;
+
 }
 .teamsImgSection{
   display: grid;
@@ -111,8 +112,13 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav ,
+    .teamsContainer
+    {
         flex-direction: column;
+    }
+    .teamsImgSection{
+      grid-template-columns:1fr;
     }
 }
 /* Medium devices */
@@ -121,7 +127,9 @@ main{
         padding: 50px;
         background-color: #b81616;
     }
-    nav{
+    nav,
+    .teamsContainer
+    {
        flex-direction: column;
     }
 }
